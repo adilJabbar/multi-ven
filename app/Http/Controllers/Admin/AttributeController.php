@@ -23,23 +23,6 @@ class AttributeController extends Controller
 
     public function attrCreateForSubcategory($subcatid) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       $data = Subcategory::findOrFail($subcatid);
       $type = 'subcategory';
       return view('admin.attribute.create', compact('data', 'type'));

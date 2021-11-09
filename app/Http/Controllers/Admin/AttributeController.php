@@ -17,7 +17,6 @@ class AttributeController extends Controller
 {
     public function attrCreateForCategory($catid) {
 
-      
       $data = Category::findOrFail($catid);
       $type = 'category';
       return view('admin.attribute.create', compact('data', 'type'));
